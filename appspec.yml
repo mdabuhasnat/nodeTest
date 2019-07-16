@@ -1,0 +1,25 @@
+version: 0.0
+os: linux
+files:
+  - source: /index.html
+    destination: /data/first-project
+  - source: /package.json
+    destination: /data/first-project
+  - source: /server.js
+    destination: /data/first-project
+hooks:
+  BeforeInstall:
+    - location: scripts/remove_root_dir
+      timeout: 900
+      runas: root
+  AfterInstall:
+    - location: scripts/install_dependencies
+      timeout: 900
+      runas: root
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 300
+      runas: root

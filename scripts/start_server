@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /data/first-project
+forever start server.js
