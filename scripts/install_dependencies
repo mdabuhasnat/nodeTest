@@ -2,3 +2,4 @@
 
 cd /data/first-project
 npm install
+npm install forever -g
