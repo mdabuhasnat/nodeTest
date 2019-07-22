@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /data/first-project
+cd /data2/first-project
 forever start server.js
