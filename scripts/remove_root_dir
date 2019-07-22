@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -rf /data/first-project
+rm -rf /data2/first-project
