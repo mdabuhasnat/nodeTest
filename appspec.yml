@@ -9,7 +9,7 @@ files:
     destination: /data2/first-project
 hooks:
   BeforeInstall:
-    - location: echo 'hello...............'
+    - location: scripts/remove_root_dir
       timeout: 900
       runas: root
   AfterInstall:
