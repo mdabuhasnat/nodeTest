@@ -10,3 +10,7 @@ app.get('/', function(req, res) {
 app.listen(3000, ()=> {
     console.log('server is running');
 });
+
+app.get('/ahasan', function (req, res) {
+    res.send('Hello ahasan');
+});
