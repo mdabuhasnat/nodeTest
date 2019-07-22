@@ -2,14 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /data/first-project
+    destination: /data2/first-project
   - source: /package.json
-    destination: /data/first-project
+    destination: /data2/first-project
   - source: /server.js
-    destination: /data/first-project
+    destination: /data2/first-project
 hooks:
   BeforeInstall:
-    - location: scripts/remove_root_dir
+    - location: echo 'hello...............'
       timeout: 900
       runas: root
   AfterInstall:
