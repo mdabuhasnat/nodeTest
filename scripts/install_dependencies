@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /data/first-project
+cd /data2/first-project
 npm install
 npm install forever -g
